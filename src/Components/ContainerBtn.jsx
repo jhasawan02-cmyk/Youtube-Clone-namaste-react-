@@ -11,7 +11,7 @@ function ContainerBtn() {
         <button className='text-2xl  text-white w-auto  border-white p-0.5 border-2 rounded mr-6 max-h-fit'>Recently Uploaded</button>
         <button className='text-2xl  text-white w-auto  border-white p-0.5 border-2 rounded mr-6 max-h-fit'>New to you</button>
     </div>
-    // will need to make dynamic buttons 
+    // will need to make dynamic buttons }
   )
 }
 

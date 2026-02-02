@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="border w-full h-fit flex items-center px-2">
+    <div className=" w-full h-fit flex items-center px-2">
       
    
       <div className="flex items-center w-3/12 py-0.5">

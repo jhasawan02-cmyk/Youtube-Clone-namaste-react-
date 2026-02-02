@@ -4,7 +4,7 @@ import MainContainer from './MainContainer'
 
 function Body() {
   return (
-    <div className='border h-11/12  flex w-full '>
+    <div className=' h-11/12  flex w-full '>
       <Sidebar />
       <MainContainer />
     </div>
