@@ -1,8 +1,13 @@
 import React from 'react'
+import Sidebar from './Sidebar'
+import MainContainer from './MainContainer'
 
 function Body() {
   return (
-    <div className='border h-11/12 w-full '>Body</div>
+    <div className='border h-11/12  flex w-full '>
+      <Sidebar />
+      <MainContainer />
+    </div>
   )
 }
 
