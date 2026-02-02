@@ -1,11 +1,14 @@
 import './App.css' 
+import Header from './Components/Header'
+import Body from './Components/Body'
+
 
 function App() {
   return (
-    <>
-      
-      <h1 className="text-5xl bg-black text-white"> youtube clone</h1>
-    </>
+    <div className=' flex-col h-screen'>
+      <Header />
+      <Body />
+    </div>
   )
 }
 
