@@ -3,7 +3,7 @@ import { bell_icon_header, hamburger_icon_header, mic_icon_header, search_icon_h
 
 function Header() {
   return (
-    <div className=" w-full h-fit flex items-center px-2 bg-gray-400">
+    <div className=" w-full h-fit flex items-center px-2 bg-white">
       
       <div className="flex items-center w-3/12 py-0.5">
         <img

@@ -18,7 +18,7 @@ function Sidebar() {
         </div>
 
         <div className="border-b py-1  text-3xl ">
-          <h3 className="ml-14 cursor-pointer">Subscription</h3>
+          <h3 className="ml-9 cursor-pointer">Subscription</h3>
         </div>
 
         <div className="p-3 text-3xl  mt-5">

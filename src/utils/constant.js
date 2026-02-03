@@ -1,5 +1,7 @@
-export const  sidebar_home_icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR75_v-te2LMN2SYKNo5wlIm6XBACW75i-ww&s"
-export const hamburger_icon_header = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw9Mu4yCMe-nK3QxKol2x4cCia-nTqJu-PCA&s"
+export const sidebar_home_icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR75_v-te2LMN2SYKNo5wlIm6XBACW75i-ww&s"
+
+// header icons
+export const hamburger_icon_header = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgr3y8H4_dwGiYRD_LUslhz9649DUCABXVeg&s"
 export const youtube_logo_header = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBaCgGJcTwKX5EYMuhYd3xuGQHUDo6wq07MQ&s"
 export const bell_icon_header = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrTiUrVaXOHR6zxamtHVpKkRmFm2H2a0rdbg&s"
 export const user_avatr_icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtKkOaBtdg8WrVMovsDXKVlE_7PWTdfnjrg&s"
