@@ -1,15 +1,16 @@
 import React from "react";
+import { sidebar_home_icon } from "../utils/constant";
 
 function Sidebar() {
   return (
-    <div className=" py-8 flex-2/12">
+    <div className=" py-8 flex-2/12 bg-gray-200">
       <div >
         <div className="border-b p-3 mb-15 ">
           <div className="flex">
             <img
               alt="image"
               className="w-7.5 mt-2.5 h-8  cursor-pointer"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR75_v-te2LMN2SYKNo5wlIm6XBACW75i-ww&s"
+              src={sidebar_home_icon}
             />
             <h3 className="py-1 ml-5 text-4xl cursor-pointer">Home</h3>
           </div>

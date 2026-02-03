@@ -1,20 +1,21 @@
 import React from "react";
+import { bell_icon_header, hamburger_icon_header, mic_icon_header, search_icon_header, user_avatr_icon, user_icon_header, youtube_logo_header } from "../utils/constant";
 
 function Header() {
   return (
-    <div className=" w-full h-fit flex items-center px-2">
+    <div className=" w-full h-fit flex items-center px-2 bg-gray-400">
       
    
       <div className="flex items-center w-3/12 py-0.5">
         <img
           alt="hamburger-icon"
           className="h-16 cursor-pointer"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw9Mu4yCMe-nK3QxKol2x4cCia-nTqJu-PCA&s"
+          src={hamburger_icon_header}
         />
         <img
           alt="youtube-logo"
           className="h-16 ml-2 cursor-pointer"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBaCgGJcTwKX5EYMuhYd3xuGQHUDo6wq07MQ&s"
+          src= {youtube_logo_header}
         />
       </div>
 
@@ -28,14 +29,14 @@ function Header() {
           <img
             alt="search-icon"
             className="h-8 px-3 cursor-pointer "
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8E-ADHCUm0aVqpN5TmbJxdE1CLNw50o5JA&s"
+            src = {search_icon_header}
           />
         </div>
 
         <img
           alt="mic-icon"
           className="h-13 ml-2 cursor-pointer"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvkm-IIm70JONUoXGgJxI08erSIFmgtj_vA&s"
+          src = {mic_icon_header}
         />
       </div>
 
@@ -44,12 +45,12 @@ function Header() {
         <img
           alt="bellIcon-logo"
           className="h-18 mr-3 cursor-pointer"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrTiUrVaXOHR6zxamtHVpKkRmFm2H2a0rdbg&s"
+          src = {bell_icon_header}
         />
         <img
           alt="user-avatar"
           className="h-12 cursor-pointer"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtKkOaBtdg8WrVMovsDXKVlE_7PWTdfnjrg&s"
+          src = {user_avatr_icon}
         />
       </div>
 
