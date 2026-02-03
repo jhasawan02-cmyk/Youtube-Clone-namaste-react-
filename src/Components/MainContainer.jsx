@@ -1,14 +1,32 @@
-import React from 'react'
-import ContainerBtn from './ContainerBtn'
-import VideoContainer from './VideoContainer'
+import React from "react";
+import ContainerBtn from "./ContainerBtn";
+import VideoContainer from "./VideoContainer";
 
 function MainContainer() {
+  const BtnDetail = [
+    "All",
+    "Music",
+    "Dance",
+    "New",
+    "Sitcome",
+    "Comedy",
+    "Arjit Singh",
+    "Space",
+    "Drama",
+    "Movies",
+    "Kapil Sharma",
+  ];
+
   return (
-    <div className='flex-10/12 border ml-4 p-2 '>
-        <ContainerBtn />
-        <VideoContainer />
+    <div className="flex-10/12 border ml-2 p-2  ">
+      <div className="flex flex-row  justify-evenly whitespace-nowrap mb-4 ">
+        {BtnDetail.map((item, idex) => (
+          <ContainerBtn key={idex} name={item} />
+        ))}
+      </div>
+      <VideoContainer />
     </div>
-  )
+  );
 }
 
-export default MainContainer
+export default MainContainer;
