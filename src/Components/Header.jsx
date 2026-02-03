@@ -1,11 +1,10 @@
 import React from "react";
-import { bell_icon_header, hamburger_icon_header, mic_icon_header, search_icon_header, user_avatr_icon, user_icon_header, youtube_logo_header } from "../utils/constant";
+import { bell_icon_header, hamburger_icon_header, mic_icon_header, search_icon_header, user_avatr_icon, youtube_logo_header } from "../utils/constant";
 
 function Header() {
   return (
     <div className=" w-full h-fit flex items-center px-2 bg-gray-400">
       
-   
       <div className="flex items-center w-3/12 py-0.5">
         <img
           alt="hamburger-icon"
