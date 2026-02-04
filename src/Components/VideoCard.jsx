@@ -20,17 +20,17 @@ function VideoCard() {
   }
 
   return (
-    <>
+    <div>
       {videos.map((video) => (
         <div 
           key={video.id} 
-          className="flex flex-col gap-2 cursor-pointer transition-transform duration-200 hover:opacity-90"
+          className="flex flex-col  cursor-pointer  "
         >
-          <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-gray-100">
+          <div className="relative aspect-video w-full  rounded-xl  ">
             <img
               alt="thumbnail"
               src={video.snippet.thumbnails.medium.url}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover "
             />
           </div>
 
@@ -38,13 +38,13 @@ function VideoCard() {
             <h3 className="text-[15px] font-semibold text-gray-900 leading-tight line-clamp-2">
               {video.snippet.title}
             </h3>
-            <p className="text-gray-500 text-sm mt-1 hover:text-gray-800 transition-colors">
+            <p className="text-gray-500  mt-1 hover:text-black text-5xl ">
               {video.snippet.channelTitle}
             </p>
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 
