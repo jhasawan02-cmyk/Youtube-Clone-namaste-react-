@@ -1,9 +1,12 @@
-import React from 'react'
+
+import React from "react";
 
 function SuggestedVideo() {
   return (
-    <div>SuggestedVideo</div>
-  )
+    <aside className="w-full max-w-sm h-fit border rounded-xl bg-white shadow-sm p-4 text-gray-600 text-lg">
+      Suggested Videos
+    </aside>
+  );
 }
 
-export default SuggestedVideo
+export default SuggestedVideo;

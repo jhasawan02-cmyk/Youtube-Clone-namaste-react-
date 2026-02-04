@@ -1,5 +1,6 @@
 import React from "react";
 import { bell_icon_header, hamburger_icon_header, mic_icon_header, search_icon_header, user_avatr_icon, youtube_logo_header } from "../utils/constant";
+import { Link } from "react-router";
 
 function Header() {
   return (
@@ -11,11 +12,14 @@ function Header() {
           className="h-16 cursor-pointer"
           src={hamburger_icon_header}
         />
+        {/* linking to home */}
+        <Link to = "/">
         <img
           alt="youtube-logo"
           className="h-16 ml-2 cursor-pointer"
           src= {youtube_logo_header}
         />
+        </Link>
       </div>
 
       
@@ -31,12 +35,14 @@ function Header() {
             src = {search_icon_header}
           />
         </div>
-
+        {/* for the time being linking watcvideo section here */}
+        <Link to = "/watch">
         <img
           alt="mic-icon"
           className="h-13 ml-2 cursor-pointer"
-          src = {mic_icon_header}
+          src = {mic_icon_header} 
         />
+        </Link>
       </div>
 
       
