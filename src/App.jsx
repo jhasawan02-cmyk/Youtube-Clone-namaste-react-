@@ -5,7 +5,7 @@ import Body from './Components/Body'
 
 function App() {
   return (
-    <div className=' flex-col h-screen '>
+    <div className='flex-col h-screen overflow-hidden'>
       <Header />
       <Body />
     </div>

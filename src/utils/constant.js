@@ -7,3 +7,6 @@ export const bell_icon_header = "https://encrypted-tbn0.gstatic.com/images?q=tbn
 export const user_avatr_icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtKkOaBtdg8WrVMovsDXKVlE_7PWTdfnjrg&s"
 export const mic_icon_header = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvkm-IIm70JONUoXGgJxI08erSIFmgtj_vA&s"
 export const search_icon_header = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8E-ADHCUm0aVqpN5TmbJxdE1CLNw50o5JA&s"
+
+// api key
+export  const API_KEY = "AIzaSyAyb0tqpC50SYANlLvvi4OS2dzWvhYmGek"
