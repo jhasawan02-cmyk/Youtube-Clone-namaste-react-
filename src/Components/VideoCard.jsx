@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router";
 
-function VideoCard({ info }) {
+function VideoCard({info}) {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+      <Link to = {`/watch?v=${info.id}`}>
       <div className="w-full aspect-video overflow-hidden">
         <img
           alt="thumbnail"
@@ -18,7 +20,8 @@ function VideoCard({ info }) {
         <p className="text-xs text-gray-600">
           {info.snippet.channelTitle}
         </p>
-      </div>
+      </div> 
+      </Link>
     </div>
   );
 }

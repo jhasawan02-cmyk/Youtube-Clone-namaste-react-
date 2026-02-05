@@ -1,5 +1,6 @@
 import React from "react";
 import { sidebar_home_icon } from "../utils/constant";
+import { Link } from "react-router";
 
 function Sidebar() {
   const  sideList = [
@@ -19,7 +20,7 @@ function Sidebar() {
               className=" mt-2.5 h-8  cursor-pointer"
               src={sidebar_home_icon}
             />
-            <h3 className="py-1 ml-4 text-4xl cursor-pointer text-blue-900 font-light mb-2">Home</h3>
+           <Link to="/"> <h3 className="py-1 ml-4 text-4xl cursor-pointer text-blue-900 font-light mb-2">Home</h3> </Link>
           </div>
           <h3 className=" ml-13 text-3xl cursor-pointer font-light text-blue-900 ">Shorts</h3>
         </div>

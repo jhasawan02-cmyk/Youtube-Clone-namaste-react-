@@ -35,14 +35,13 @@ function Header() {
             src = {search_icon_header}
           />
         </div>
-        {/* for the time being linking watcvideo section here */}
-        <Link to = "/watch">
+
         <img
           alt="mic-icon"
           className="h-13 ml-2 cursor-pointer"
           src = {mic_icon_header} 
         />
-        </Link>
+       
       </div>
 
       
