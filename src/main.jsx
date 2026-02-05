@@ -16,7 +16,7 @@ const router = createBrowserRouter([
        element:<Body/>,
       },
       {
-        path:'watch',
+        path:'/watch',
         element:<VideoWatch/>,
       },
     ],
