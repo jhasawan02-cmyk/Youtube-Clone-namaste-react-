@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link, useSearchParams } from "react-router";
+import { Link, useSearchParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 
 const VITE_API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -7,6 +9,8 @@ function SuggestedVideos() {
   const [videos, setVideos] = useState([]);
   const [searchParam] = useSearchParams();
   const currentVideoId = searchParam.get("v");
+  const commentCount = useSelector((store) => store.app.commentCount);
+
 
 useEffect(() => {
     const getSuggestedVideos = async () => {
@@ -36,13 +40,12 @@ useEffect(() => {
     <div className="flex flex-col gap-4 w-full">
       <h3 className="font-bold text-lg mb-2">Suggested Videos</h3>
       
-      {videos.map((video) => (
+      {videos.slice(0, commentCount).map((video) => (
         <Link 
           key={video.id} 
           to={`/watch?v=${video.id}`} 
           className="flex gap-2 hover:bg-gray-100 p-1 rounded-lg transition-all"
         >
-          {/* Thumbnail */}
           <div className="relative shrink-0">
             <img 
               src={video.snippet.thumbnails.medium.url} 
@@ -50,8 +53,6 @@ useEffect(() => {
               className="w-40 h-24 object-cover rounded-xl"
             />
           </div>
-
-          {/* Video Info */}
           <div className="flex flex-col overflow-hidden">
             <h4 className="text-sm font-bold line-clamp-2 text-gray-900 leading-tight">
               {video.snippet.title}
