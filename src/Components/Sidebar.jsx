@@ -41,7 +41,7 @@ function Sidebar() {
             {sideList.map((item, index) => (
               <li
                 key={index}
-                className="py-2 px-3 mb-1 text-gray-700 text-base font-medium cursor-pointer rounded hover:bg-gray-100 w-fit"
+                className="py-2 px-4 mb-1 text-gray-800 text-lg font-medium cursor-pointer rounded hover:bg-gray-100 w-fit"
               >
                 {item}
               </li>

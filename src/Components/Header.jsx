@@ -44,14 +44,14 @@ function Header() {
           />
           <img
             alt="search-icon"
-            className="h-10 px-3 cursor-pointer hover:bg-gray-200 rounded-full"
+            className="h-8 px-3 cursor-pointer bg-whiterounded-full"
             src={search_icon_header}
           />
         </div>
 
         <img
           alt="mic-icon"
-          className="h-12 ml-3 cursor-pointer p-2 rounded-full hover:bg-gray-100"
+          className="h-16  cursor-pointer p-2 rounded-full hover:bg-gray-100"
           src={mic_icon_header}
         />
       </div>
@@ -59,7 +59,7 @@ function Header() {
       <div className="flex items-center justify-end w-3/12">
         <img
           alt="bellIcon-logo"
-          className="h-12 mr-3 cursor-pointer p-2 rounded-full hover:bg-gray-100"
+          className="h-17 cursor-pointer p-2 rounded-full hover:bg-gray-100"
           src={bell_icon_header}
         />
         <img
