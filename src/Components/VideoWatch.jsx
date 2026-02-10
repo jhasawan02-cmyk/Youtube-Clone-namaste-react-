@@ -3,6 +3,7 @@ import React from "react";
 import VideoPlayer from "./VideoPlayer";
 import SuggestedVideo from "./SuggestedVideo";
 import Comments from "./Comments";
+import { Link } from "react-router";
 
 function VideoWatch() {
   return (

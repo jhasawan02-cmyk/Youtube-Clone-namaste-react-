@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
+
 
 function Sidebar() {
   const  sideList = [
@@ -14,7 +15,7 @@ function Sidebar() {
       <div  className="mt-18">
         <div className="border-b  mb-15 ">
           <div className="flex  ml-9">
-           <Link to="/"> <h3 className="  cursor-pointer text-black  text-2xl font-sm mb-2">Home</h3> </Link>
+           <Link to="/"> <h3 className="  cursor-pointer text-black  text-2xl font-sm mb-2">Home</h3></Link> 
           </div>
           <h3 className=" ml-9 text-2xl cursor-pointer font-sm text-black">Shorts</h3>
         </div>

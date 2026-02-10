@@ -12,7 +12,6 @@ function Header() {
           className="h-16 cursor-pointer"
           src={hamburger_icon_header}
         />
-        {/* linking to home */}
         <Link to = "/">
         <img
           alt="youtube-logo"

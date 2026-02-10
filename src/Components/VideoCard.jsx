@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 function VideoCard({info}) {
   return (
@@ -17,7 +17,7 @@ function VideoCard({info}) {
         <h3 className="text-sm font-semibold text-gray-900 leading-snug line-clamp-2">
           {info.snippet.title}
         </h3>
-        <p className="text-xs text-gray-600">
+        <p className="text-md text-gray-700">
           {info.snippet.channelTitle}
         </p>
       </div> 
