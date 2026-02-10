@@ -23,7 +23,7 @@ function MainContainer() {
   return (
     <div className="w-full h-screen bg-gray-50 pt-16">
       <div className="w-full p-3 mt-2">
-        <div className="flex flex-row whitespace-nowrap overflow-x-auto ml-2 gap-2 pr-6 pb-2">
+        <div className="flex flex-row whitespace-nowrap overflow-x-auto  gap-4 items-center justify-center">
           {BtnDetail.map((item, index) => (
             <ContainerBtn key={index} name={item} />
           ))}
