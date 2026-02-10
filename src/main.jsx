@@ -7,6 +7,9 @@ import VideoWatch from "./Components/VideoWatch.jsx";
 import Body from "./Components/Body.jsx";
 import MainContainer from "./Components/MainContainer.jsx";
 import Header from "./Components/Header.jsx";
+import { Provider } from "react-redux";
+import store from "./utils/store.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -31,7 +34,9 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>,
+  </Provider>
 );

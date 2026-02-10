@@ -1,13 +1,20 @@
 import React from "react";
 import { bell_icon_header, hamburger_icon_header, mic_icon_header, search_icon_header, user_avatr_icon, youtube_logo_header } from "../utils/constant";
 import { Link } from "react-router";
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../utils/appSlice";
 
 function Header() {
+  const dispatch = useDispatch() ;
+
+  const toggleMenuHandler = () =>{
+    dispatch(toggleMenu());
+  } 
   return (
     <div className=" w-full h-16 flex items-center px-2 bg-white fixed top-0 left-0 z-10 ">
-      
       <div className="flex items-center w-3/12 py-0.5">
         <img
+          onClick={() => toggleMenuHandler()}
           alt="hamburger-icon"
           className="h-16 cursor-pointer"
           src={hamburger_icon_header}

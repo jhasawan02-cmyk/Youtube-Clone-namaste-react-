@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 function Sidebar() {
@@ -10,6 +11,8 @@ function Sidebar() {
     "Liked Videos",
     "Your Videos",
   ]
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen) ;
+    if (!isMenuOpen) return null ;
   return (
     <div className=" py-8 w-2/12 bg-white sticky top-16 h-full overflow-y-auto ">
       <div  className="mt-16">
