@@ -37,8 +37,8 @@ useEffect(() => {
   }, [currentVideoId]);
 
   return (
-    <div className="flex flex-col gap-4 w-full">
-      <h3 className="font-bold text-lg mb-2">Suggested Videos</h3>
+    <div className="flex flex-col gap-1 w-full text-sm h-full overflow-y-auto">
+      <h3 className="font-bold text-lg px-2">Suggested Videos</h3>
       
       {videos.slice(0, commentCount).map((video) => (
         <Link 

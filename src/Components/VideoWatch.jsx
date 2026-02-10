@@ -16,11 +16,12 @@ function VideoWatch() {
   const [searchParam] = useSearchParams();
   const videoId = searchParam.get("v");
 
-  // 🔥 shared state
   const [commentCount, setCommentCount] = useState(0);
 
   return (
-    <div className="w-full min-h-screen bg-gray-50 flex flex-col md:flex-row gap-6 py-5 mt-13 px-4">
+    <div className="w-full min-h-screen bg-gray-50 flex flex-col md:flex-row items-stretch gap-6 py-5 mt-13 px-1">
+      
+
       <div className="grow lg:w-[70%] flex flex-col gap-1">
         <VideoPlayer />
         <Comments
@@ -29,11 +30,14 @@ function VideoWatch() {
         />
       </div>
 
-      <div className="lg:w-[30%]">
+
+      <div className="lg:w-[30%] flex flex-col">
         <SuggestedVideo commentCount={commentCount} />
       </div>
+
     </div>
   );
 }
+
 
 export default VideoWatch;
