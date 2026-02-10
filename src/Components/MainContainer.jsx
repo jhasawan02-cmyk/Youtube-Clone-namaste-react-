@@ -18,8 +18,8 @@ function MainContainer() {
   ];
 
   return (
-    <div className="flex-10/12  p-2 border-gray-100 rounded-lg border h-auto overflow-y-auto ">
-      <div className="flex flex-row  justify-evenly whitespace-nowrap  ">
+    <div className="flex-10/12  p-2 border-gray-100 rounded-lg border h-auto overflow-y-auto  ">
+      <div className="flex flex-row  justify-evenly whitespace-nowrap  scrollbar-x-auto ">
         {BtnDetail.map((item, idex) => (
           <ContainerBtn key={idex} name={item} />
         ))}

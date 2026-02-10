@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function VideoCard({info}) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition cursor-pointer">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-2xs hover:bg-gray-200 transition cursor-pointer">
       <Link to = {`/watch?v=${info.id}`}>
       <div className="w-full aspect-video overflow-hidden">
         <img

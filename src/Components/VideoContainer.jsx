@@ -9,7 +9,7 @@ function VideoContainer() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&chart=mostPopular&maxResults=15&regionCode=US&key=${VITE_API_KEY}`
+        `https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=${VITE_API_KEY}`
       );
       const json = await response.json();
       setVideos(json.items);
