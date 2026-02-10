@@ -11,9 +11,9 @@ function Sidebar() {
     "Your Videos",
   ]
   return (
-    <div className=" py-8 w-2/12 bg-white sticky top-16 h-screen overflow-y-auto scrollbar-hide">
-      <div  className="mt-18">
-        <div className="border-b  mb-15 ">
+    <div className=" py-8 w-2/12 bg-white sticky top-16 h-full overflow-y-auto ">
+      <div  className="mt-16">
+        <div className="border-b  mb-12 ">
           <div className="flex  ml-9">
            <Link to="/"> <h3 className="  cursor-pointer text-black  text-2xl font-sm mb-2">Home</h3></Link> 
           </div>

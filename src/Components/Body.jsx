@@ -1,13 +1,15 @@
 import React from 'react'
 import Sidebar from './Sidebar'
-import MainContainer from './MainContainer'
 import { Outlet } from 'react-router-dom'
 
 function Body() {
   return (
-    <div className=' h-11/12  flex w-full  bg-gray-100 text-black'>
+    <div className='flex w-full  overflow-hidden bg-gray-100 text-black'>
       <Sidebar />
-      <Outlet />
+      <main className="flex-1  overflow-y-auto">
+        <Outlet />
+      </main>
+
     </div>
   )
 }
