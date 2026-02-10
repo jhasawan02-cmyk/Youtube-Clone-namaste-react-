@@ -1,4 +1,4 @@
-export const sidebar_home_icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNvCG6QMOjLmraRMfUPSQKj3omdxGsWdC-g&s"
+
 
 // header icons
 export const hamburger_icon_header = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgr3y8H4_dwGiYRD_LUslhz9649DUCABXVeg&s"
