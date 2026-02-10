@@ -7,8 +7,8 @@ import { Link } from "react-router";
 
 function VideoWatch() {
   return (
-    <div className="w-full min-h-screen bg-gray-50 flex gap-6 p-4">
-      <div className="flex-1 flex flex-col">
+    <div className="w-full h-screen bg-gray-50 flex gap-1 py-5 mt-13">
+      <div className="flex-10/12 flex flex-col">
         <VideoPlayer />
         <Comments />
       </div>
