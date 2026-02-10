@@ -14,7 +14,7 @@ function VideoWatch() {
   },[dispatch])
 
   return (
-    <div className="w-full h-screen bg-gray-50 flex gap-1 py-5 mt-13">
+    <div className="w-full h-screen bg-gray-50 flex gap-1 py-5 mt-13 px-2">
       <div className="flex-10/12 flex flex-col">
         <VideoPlayer />
         <Comments />

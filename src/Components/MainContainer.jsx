@@ -16,20 +16,21 @@ function MainContainer() {
     "Drama",
     "Movies",
     "Kapil Sharma",
+    "kishore kumar",
+    "Dance",
   ];
 
   return (
-    <div className="w-full h-screen bg-gray-100 pt-16 ">
-    <div className="w-12/12  p-2 border-gray-100 rounded-lg border h-auto overflow-x-auto overflow-y-auto  mt-3 ">
-      <div className="flex flex-row  justify-evenly whitespace-nowrap  scrollbar-x-auto ">
-        {BtnDetail.map((item, idex) => (
-          <ContainerBtn key={idex} name={item} />
-        ))}
+    <div className="w-full h-screen bg-gray-50 pt-16">
+      <div className="w-full p-3 mt-2">
+        <div className="flex flex-row whitespace-nowrap overflow-x-auto ml-2 gap-2 pr-6 pb-2">
+          {BtnDetail.map((item, index) => (
+            <ContainerBtn key={index} name={item} />
+          ))}
+        </div>
+        <VideoContainer />
       </div>
-      <VideoContainer />
     </div>
-    </div>
-
   );
 }
 

@@ -2,36 +2,49 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-
 function Sidebar() {
-  const  sideList = [
+  const sideList = [
     "History",
     "Playlist",
     "Watch Later",
     "Liked Videos",
     "Your Videos",
-  ]
-  const isMenuOpen = useSelector((store) => store.app.isMenuOpen) ;
-    if (!isMenuOpen) return null ;
+  ];
+
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+  if (!isMenuOpen) return null;
+
   return (
-    <div className=" py-8 w-2/12 bg-white sticky top-16 h-full overflow-y-auto ">
-      <div  className="mt-16">
-        <div className="border-b  mb-12 ">
-          <div className="flex  ml-9">
-           <Link to="/"> <h3 className="  cursor-pointer text-black  text-2xl font-sm mb-2">Home</h3></Link> 
+    <div className="py-6 w-2/12 bg-white sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto border-r">
+      <div className="mt-6">
+        <div className="border-b pb-4 mb-6">
+          <div className="ml-6">
+            <Link to="/">
+              <h3 className="cursor-pointer text-gray-800 text-lg font-medium py-2 px-2 rounded hover:bg-gray-100 w-fit">
+                Home
+              </h3>
+            </Link>
           </div>
-          <h3 className=" ml-9 text-2xl cursor-pointer font-sm text-black">Shorts</h3>
+          <h3 className="ml-6 text-lg cursor-pointer font-medium text-gray-800 py-2 px-2 rounded hover:bg-gray-100 w-fit">
+            Shorts
+          </h3>
         </div>
 
-        <div className="border-b py-2 text-2xl ">
-          <h3 className="ml-9 cursor-pointer font-sm text-black  ">Subscriptions</h3>
+        <div className="border-b pb-4 mb-6">
+          <h3 className="ml-6 cursor-pointer font-medium text-gray-800 text-lg py-2 px-2 rounded hover:bg-gray-100 w-fit">
+            Subscriptions
+          </h3>
         </div>
 
-        <div className="p-3 text-3xl  mt-5">
+        <div className="px-4">
           <ul>
-            
-            {sideList.map((item) => (
-                 <li className="py-1 ml-5 text-2xl mb-1 font-sm text-black cursor-pointer w-fit">{item}</li> 
+            {sideList.map((item, index) => (
+              <li
+                key={index}
+                className="py-2 px-3 mb-1 text-gray-700 text-base font-medium cursor-pointer rounded hover:bg-gray-100 w-fit"
+              >
+                {item}
+              </li>
             ))}
           </ul>
         </div>
